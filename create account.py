@@ -5,7 +5,7 @@ def create_account(username, password):
     # تحقق إذا المستخدم موجود مسبقًا
     for user in users:
         if user["username"] == username:
-            return "اسم المستخدم موجود مسبقًا!"
+            return "اسم المستخدم موجود !"
     
     # إنشاء الحساب
     user = {
@@ -19,3 +19,4 @@ def create_account(username, password):
 print(create_account("eyad", "12345"))
 print(create_account("mohamed", "abcdef"))
 print(create_account("eyad", "67890"))  # محاولة إنشاء مستخدم موجود
+
