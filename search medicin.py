@@ -9,9 +9,10 @@ def search_medicine(name):
     for med in pharmacy:
         if med["name"] == name:
             return f"تم العثور على الدواء: {med['name']} | السعر: {med['price']} | الكمية: {med['quantity']}"
-    return "الدواء غير موجود في الصيدلية."
+    return "الدواء غير موجودة."
 
 # تجربة البحث
 print(search_medicine("باراسيتامول"))
 print(search_medicine("فينيل"))
+
 
