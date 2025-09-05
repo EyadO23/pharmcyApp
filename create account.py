@@ -10,7 +10,7 @@ def create_account(username, password):
     # إنشاء الحساب
     user = {
         "username": username,
-        "password": password  # ملاحظة: للواقع العملي لازم تشفر الباسورد
+        "password": password  
     }
     users.append(user)
     return f"تم إنشاء الحساب بنجاح للمستخدم: {username}"
@@ -19,4 +19,5 @@ def create_account(username, password):
 print(create_account("eyad", "12345"))
 print(create_account("mohamed", "abcdef"))
 print(create_account("eyad", "67890"))  # محاولة إنشاء مستخدم موجود
+
 
